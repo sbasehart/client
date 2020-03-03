@@ -15,16 +15,16 @@
   </ion-row>
   <ion-row>
     <ion-col>
-      {{item.deliverDate}}
-    </ion-col>
-    <ion-col>
-      {{item.temReferenceId}}
+      {{item.teamReferenceId}}
     </ion-col>
     <ion-col>
       {{item.routeName}}
     </ion-col>
     <ion-col>
       {{item.vendorName}}
+    </ion-col>
+    <ion-col>
+      {{item.accountName}}
     </ion-col>
   </ion-row>
   <ion-row>
@@ -60,6 +60,42 @@
     </ion-col>
     <ion-col>
       {{item.adjustedPrice}}
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-checkbox checked="{{item.isEvenExchange}}"></ion-checkbox> Even Exchange
+    </ion-col>
+    <ion-col>
+      <ion-checkbox checked="{{item.isPickupOnly}}"></ion-checkbox> Pickup Only
+    </ion-col>
+    <ion-col>
+      <ion-checkbox checked="{{item.isActive}}"></ion-checkbox> Active
+    </ion-col>
+    <ion-col>
+      <ion-checkbox checked="{{item.isBillable}}"></ion-checkbox> Billable
+    </ion-col>
+  </ion-row>    
+  <ion-row>
+    <ion-col>
+      {{item.itemStatus}}
+    </ion-col>
+    <ion-col>
+      {{item.deliverDate}}
+    </ion-col>
+    <ion-col>
+      {{item.refusalReason}}
+    </ion-col>
+    <ion-col>
+      {{item.ratedValue}}
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    {{item.notes}}
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      Updated by {{item.updatedBy}}, on {{item.updateDate}}
     </ion-col>
   </ion-row>
 </ion-grid>
