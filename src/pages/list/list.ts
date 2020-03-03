@@ -13,7 +13,7 @@ export class ListPage {
   items: Array<{name: string, qty: number, priceeach: number}>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.names = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+    this.names = ['desk', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
     'american-football', 'boat', 'bluetooth', 'build']
     this.items = [];
     for(let i = 1; i < 11; i++) {

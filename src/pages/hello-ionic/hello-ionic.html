@@ -11,5 +11,17 @@
 <ion-content padding>
 
   <h2>Locations:</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="Location"><div>Location:</div></ion-col>
+      <ion-col class="Address"><div>Address:</div></ion-col>
+      <ion-col class="Phone"><div>Phone Number:</div></ion-col>
+    </ion-row>
+    <ion-row *ngFor="let item of items">
+      <ion-col class="Location"><div></div></ion-col>
+      <ion-col class="Address"><div></div></ion-col>
+      <ion-col class="Phone"><div></div></ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

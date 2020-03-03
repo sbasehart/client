@@ -9,10 +9,12 @@
 
 <ion-content>
   <h3 text-center *ngIf="selectedItem">
-    {{selectedItem.title}}
-    <ion-icon [name]="selectedItem.icon"></ion-icon>
+    {{selectedItem.name}}
   </h3>
-  <h4 text-center *ngIf="selectedItem">
-    You navigated here from <b>{{selectedItem.title}}</b>
+  <h4 *ngIf="selectedItem">
+    Price Per Unit <b>{{selectedItem.priceeach}}</b>
+  </h4> 
+  <h4 *ngIf="selectedItem">
+    Qty Ordered <b>{{selectedItem.qty}}</b>
   </h4>
 </ion-content>

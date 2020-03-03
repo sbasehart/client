@@ -9,10 +9,15 @@
 
 <ion-content>
   <ion-grid>
+    <ion-row>
+      <ion-col class="quantity"><h3>Quantity:</h3></ion-col>
+      <ion-col class="itemNames"><h3>Item Name:</h3></ion-col>
+      <ion-col class="prices"><h3>Price per Unit:</h3></ion-col>
+    </ion-row>
     <ion-row *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-col><div>{{item.qty}}</div></ion-col>
-      <ion-col><div>{{item.name}}</div></ion-col>
-      <ion-col><div>{{item.priceeach}}</div></ion-col>
+      <ion-col class="quantity"><div>{{item.qty}}</div></ion-col>
+      <ion-col class="itemNames"><div>{{item.name}}</div></ion-col>
+      <ion-col class="prices"><div>{{item.priceeach}}</div></ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
