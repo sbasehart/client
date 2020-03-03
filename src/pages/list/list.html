@@ -8,13 +8,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon name="{{item.icon}}" item-left></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-right>
-        {{item.note}}
-      </div>
-    </button>
-  </ion-list>
+  <ion-grid>
+    <ion-row *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-col><div>{{item.qty}}</div></ion-col>
+      <ion-col><div>{{item.name}}</div></ion-col>
+      <ion-col><div>{{item.priceeach}}</div></ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -6,10 +6,13 @@ import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
+import { SettingsPage } from '../pages/settings/settings';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SettingsPage } from '../pages/settings/settings';
+import { MongooseModule } from '@nestjs/mongoose';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { SettingsPage } from '../pages/settings/settings';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp),
+    // MongooseModule.forRoot('mongodb://localhost/client')
   ],
   bootstrap: [IonicApp],
   entryComponents: [

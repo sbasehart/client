@@ -12,11 +12,9 @@ import { Component } from '@angular/core';
 })
 export class OrderComponent {
 
-  text: string;
 
   constructor() {
     console.log('Hello OrderComponent Component');
-    this.text = 'Hello World';
   }
 
 }
