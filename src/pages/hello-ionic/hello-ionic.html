@@ -11,18 +11,18 @@
 
 
 <ion-content padding>
-
-  <h2>Locations:</h2>
   <ion-grid>
-    <ion-row>
-      <ion-col class="Location"><div>Location:</div></ion-col>
-      <ion-col class="Address"><div>Address:</div></ion-col>
-      <ion-col class="Phone"><div>Phone Number:</div></ion-col>
+    <ion-row *ngIf="locations != 0">
+      <ion-col class="Store"><h4>Store Number:</h4></ion-col>
+      <ion-col class="Location"><h4>Location:</h4></ion-col>
+      <ion-col class="Address"><h4>Address:</h4></ion-col>
+      <ion-col class="Phone"><h4>Contact Info:</h4></ion-col>
     </ion-row>
-    <ion-row *ngFor="let item of items">
-      <ion-col class="Location"><div></div></ion-col>
-      <ion-col class="Address"><div></div></ion-col>
-      <ion-col class="Phone"><div></div></ion-col>
+    <ion-row *ngFor="let loc of locations">
+      <ion-col class="Store"><div>{{loc.storeNumber}}</div></ion-col>
+      <ion-col class="Location"><div>{{loc.name}}</div></ion-col>
+      <ion-col class="Address"><div>{{loc.adress1}}, {{loc.address2}}, {{loc.zip}}</div></ion-col>
+      <ion-col class="Phone"><div><ion-icon name="call-outline"></ion-icon> {{loc.phone1}} | <ion-icon name="call-outline"></ion-icon>{{loc.email}}</div></ion-col>
     </ion-row>
   </ion-grid>
 
