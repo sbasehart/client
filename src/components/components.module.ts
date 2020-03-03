@@ -11,6 +11,7 @@ import { OrderEditComponent } from './order/order-edit/order-edit';
 import { LocationDetailsComponent } from './location/location-details/location-details';
 import { ItemDetailsComponent } from './item/item-details/item-details';
 import { OrderDetailsComponent } from './order-details/order-details';
+import { AuthComponent } from './auth/auth';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { OrderDetailsComponent } from './order-details/order-details';
         OrderEditComponent,
     LocationDetailsComponent,
     ItemDetailsComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    AuthComponent
     ],
 	imports: [
 
@@ -41,7 +43,8 @@ import { OrderDetailsComponent } from './order-details/order-details';
         OrderEditComponent,
     LocationDetailsComponent,
     ItemDetailsComponent,
-    OrderDetailsComponent
+    OrderDetailsComponent,
+    AuthComponent
     ]
 })
 export class ComponentsModule {}
