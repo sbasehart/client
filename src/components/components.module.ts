@@ -10,7 +10,7 @@ import { ItemEditComponent } from './item/item-edit/item-edit';
 import { OrderEditComponent } from './order/order-edit/order-edit';
 import { LocationDetailsComponent } from './location/location-details/location-details';
 import { ItemDetailsComponent } from './item/item-details/item-details';
-import { OrderDetailsComponent } from './order-details/order-details';
+import { OrderDetailsComponent } from './order/order-details/order-details';
 import { AuthComponent } from './auth/auth';
 
 
