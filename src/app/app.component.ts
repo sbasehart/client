@@ -7,7 +7,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -25,12 +25,24 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen
   ) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    toggleDarkTheme(prefersDark.matches);
+
+    // Listen for changes to the prefers-color-scheme media query
+    prefersDark.addListener((mediaQuery) => toggleDarkTheme(mediaQuery.matches));
+
+    // Add or remove the "dark" class based on if the media query matches
+    function toggleDarkTheme(shouldAdd) {
+      document.body.classList.toggle('dark', shouldAdd);
+    }
     this.initializeApp();
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Home', component: HelloIonicPage },
+      { title: 'Orders', component: ListPage },
+      { title: 'Settings', component: SettingsPage },
     ];
   }
 
@@ -49,4 +61,6 @@ export class MyApp {
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
   }
+
+  
 }

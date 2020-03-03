@@ -1,19 +1,27 @@
-<ion-menu [content]="content" type="overlay">
+<div onload="loadApp()">
+  <ion-menu [content]="content" type="overlay">
 
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Pages</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content>
-    <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
-</ion-menu>
-
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+    <ion-header>
+      <ion-toolbar>
+        <ion-item>
+          <ion-icon slot="start" name="moon"></ion-icon>
+          <ion-label>
+            Dark Theme
+          </ion-label>
+          <ion-toggle id="themeToggle" slot="end"></ion-toggle>
+        </ion-item>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content>
+      <ion-list>
+        <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+  
+</div>
