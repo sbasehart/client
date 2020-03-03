@@ -8,6 +8,9 @@ import { LocationEditComponent } from './location/location-edit/location-edit';
 import { ClientEditComponent } from './client/client-edit/client-edit';
 import { ItemEditComponent } from './item/item-edit/item-edit';
 import { OrderEditComponent } from './order/order-edit/order-edit';
+import { LocationDetailsComponent } from './location/location-details/location-details';
+import { ItemDetailsComponent } from './item/item-details/item-details';
+import { OrderDetailsComponent } from './order-details/order-details';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { OrderEditComponent } from './order/order-edit/order-edit';
         LocationEditComponent,
         ClientEditComponent,
         ItemEditComponent,
-        OrderEditComponent
+        OrderEditComponent,
+    LocationDetailsComponent,
+    ItemDetailsComponent,
+    OrderDetailsComponent
     ],
 	imports: [
 
@@ -32,7 +38,10 @@ import { OrderEditComponent } from './order/order-edit/order-edit';
         LocationEditComponent,
         ClientEditComponent,
         ItemEditComponent,
-        OrderEditComponent
+        OrderEditComponent,
+    LocationDetailsComponent,
+    ItemDetailsComponent,
+    OrderDetailsComponent
     ]
 })
 export class ComponentsModule {}
