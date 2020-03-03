@@ -1,5 +1,6 @@
-<div class="container" (ngSubmit)="clientForm()">
-  <form action="">
+<div class="container" >
+  <form (ngSubmit)="clientForm()">
+
     <ion-item>
       <ion-input [(ngModel)]="client.name" name="name" type="text">
     </ion-item>
@@ -45,5 +46,6 @@
     </ion-item>
 
     <button type="submit">Save</button>
+
   </form>
 </div>
