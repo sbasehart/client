@@ -19,7 +19,7 @@ import { OrderEditComponent } from './order/order-edit/order-edit';
         LocationEditComponent,
         ClientEditComponent,
         ItemEditComponent,
-    OrderEditComponent
+        OrderEditComponent
     ],
 	imports: [
 
@@ -32,7 +32,7 @@ import { OrderEditComponent } from './order/order-edit/order-edit';
         LocationEditComponent,
         ClientEditComponent,
         ItemEditComponent,
-    OrderEditComponent
+        OrderEditComponent
     ]
 })
 export class ComponentsModule {}
