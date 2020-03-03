@@ -1,22 +1,18 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
-/**
- * Generated class for the LocationEditComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'location-edit',
   templateUrl: 'location-edit.html'
 })
 export class LocationEditComponent {
 
-  text: string;
+  id: number;
+  editMode = false;
+  locationForm: FormGroup;
 
   constructor() {
     console.log('Hello LocationEditComponent Component');
-    this.text = 'Hello World';
   }
 
 }
