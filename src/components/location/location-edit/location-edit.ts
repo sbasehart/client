@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'location-edit',
   templateUrl: 'location-edit.html'
 })
-export class LocationEditComponent {
+export class LocationEditComponent implements OnInit {
 
   id: number;
   editMode = false;
@@ -13,6 +13,10 @@ export class LocationEditComponent {
 
   constructor() {
     console.log('Hello LocationEditComponent Component');
+  }
+
+  ngOnInit() {
+    
   }
 
 }

@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'item-edit',
   templateUrl: 'item-edit.html'
 })
-export class ItemEditComponent {
+export class ItemEditComponent implements OnInit {
 
   id: number;
   editMode = false;
@@ -13,6 +13,10 @@ export class ItemEditComponent {
 
   constructor() {
     console.log('Hello ItemEditComponent Component');
+  }
+
+  ngOnInit() {
+    
   }
 
 }

@@ -1,22 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Order } from '../order.model';
 
-/**
- * Generated class for the OrderEditComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'order-edit',
   templateUrl: 'order-edit.html'
 })
-export class OrderEditComponent {
-
-  text: string;
+export class OrderEditComponent implements OnInit{
+  orders: Order[]= []
 
   constructor() {
     console.log('Hello OrderEditComponent Component');
-    this.text = 'Hello World';
+  }
+
+  ngOnInit() {
+
   }
 
 }
