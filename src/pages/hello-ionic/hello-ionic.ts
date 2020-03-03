@@ -15,10 +15,4 @@ export class HelloIonicPage implements OnInit {
   ngOnInit() {
     
   }
-
-  // itemTapped(event, location) {
-  //   this.navCtrl.push(Location, {
-  //     location: location
-  //   });
-  // }
 }
