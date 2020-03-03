@@ -1,5 +1,5 @@
 import { Item } from '../item/item.model';
-import { location } from '../location/location.model'
+import { Location } from '../location/location.model'
 
 export class Recipe {
     public _id: string;
@@ -17,7 +17,7 @@ export class Recipe {
     public receiptNotes: string;
     public rating: any;
     public clientId: string;
-    public clientLocationId: string;
+    public clientLocationId: Location[];
     public isPickedUp: boolean;
     public isDelivered: boolean;
 
@@ -36,7 +36,7 @@ export class Recipe {
     receiptNotes: string,
     rating: any,
     clientId: string,
-    clientLocationId: string,
+    clientLocationId: Location[],
     isPickedUp: boolean,
     isDelivered: boolean,
   ) {

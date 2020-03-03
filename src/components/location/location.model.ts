@@ -1,6 +1,6 @@
 import { Client } from '../client/client.model'
 
-export class location {
+export class Location {
 _id: string;
   name: string;
   storeNumber: string;
