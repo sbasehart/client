@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 /**
  * Generated class for the ItemEditComponent component.
@@ -12,11 +13,12 @@ import { Component } from '@angular/core';
 })
 export class ItemEditComponent {
 
-  text: string;
+  id: number;
+  editMode = false;
+  ItemForm: FormGroup;
 
   constructor() {
     console.log('Hello ItemEditComponent Component');
-    this.text = 'Hello World';
   }
 
 }
