@@ -1,7 +1,7 @@
 import { Item } from '../item/item.model';
 import { Location } from '../location/location.model'
 
-export class Recipe {
+export class Order {
     public _id: string;
     public customerId: string;
     public salesPerson: string;
