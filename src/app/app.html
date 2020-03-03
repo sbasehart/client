@@ -1,5 +1,5 @@
 <div onload="loadApp()">
-  <ion-menu [content]="content" type="overlay">
+  <ion-menu [content]="content" type="push">
 
     <ion-header>
       <ion-toolbar>
@@ -23,5 +23,11 @@
   </ion-menu>
   
   <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
-  
+
+  <ion-footer>
+    <ion-toolbar class="text-center">
+      <img src="assets/imgs/ost.png" alt="logo" id="footerLogo">
+      <ion-title><small> &copy; Of Service Transportation 2020</small></ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </div>

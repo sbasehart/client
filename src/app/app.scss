@@ -5,3 +5,18 @@ ion-toolbar {
 .verticalScrollContainer {
     background: var(--color-toolbar-background);
 }
+
+#footerLogo {
+    max-height: 40px;
+    margin: 0 auto;
+    padding: 0
+}
+
+.text-center {
+    text-align: center;
+}
+
+small {
+    font-size: x-small;
+    margin: 0 auto
+}
