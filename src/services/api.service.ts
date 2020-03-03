@@ -6,7 +6,7 @@ import { catchError, tap } from 'rxjs/operators';
 const httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
-  const apiUrl = "/api/v1/products";
+  const apiUrl = "http://localhost:3000/api/";
 
 export class ApiService {
   
@@ -14,5 +14,5 @@ export class ApiService {
 
 
 
-    
+
 }
