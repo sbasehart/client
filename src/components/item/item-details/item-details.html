@@ -1,41 +1,39 @@
 <ion-grid>
   <ion-row>
+
     <ion-col>
-      {{item.RouteId}}
+      Route: {{item.RouteId}} | {{item.routeName}}
     </ion-col>
     <ion-col>
-      {{item.stopId}}
+      Stop: {{item.stopId}}
     </ion-col>
     <ion-col>
-      {{item.vendorId}}
+      Vendor: {{item.vendorId}} | {{item.vendorName}}
     </ion-col>
     <ion-col>
-      {{item.driverId}}
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      {{item.teamReferenceId}}
-    </ion-col>
-    <ion-col>
-      {{item.routeName}}
-    </ion-col>
-    <ion-col>
-      {{item.vendorName}}
-    </ion-col>
-    <ion-col>
-      {{item.accountName}}
+      Driver ID: {{item.driverId}}<br>
+      Team: {{item.teamReferenceId}}
     </ion-col>
   </ion-row>
+
+
   <ion-row>
     <ion-col>
-      {{item.stopStatus}}
+      Stop Status: {{item.stopStatus}}
     </ion-col>
     <ion-col>
-      {{item.stopNo}}
+      Stop #: {{item.stopNo}}
+    </ion-col>
+    <ion-col>
+      Account: {{item.accountName}}
     </ion-col>
   </ion-row>
+
+
   <ion-row>
+    <ion-col size="12" size-md>
+      <h4>Item Info</h4>
+    </ion-col>
     <ion-col>
       {{item.itemPkgId}}
     </ion-col>
@@ -48,9 +46,7 @@
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col>
-      {{item.orderQty}}
-    </ion-col>
+
     <ion-col>
       {{item.itemDesc1}}
       {{item.itemDesc2}}
@@ -62,7 +58,35 @@
       {{item.adjustedPrice}}
     </ion-col>
   </ion-row>
+
   <ion-row>
+    <ion-col>
+      Order QTY
+    </ion-col>
+    <ion-col>
+      Last Order QTY
+    </ion-col>
+    <ion-col>
+      Exception QTY
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      {{item.orderQty}}
+    </ion-col>
+    <ion-col>
+      {{item.lastOrderQty}}
+    </ion-col>
+    <ion-col>
+      {{item.exceptionQty}}
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col size="12" size-md>
+      <h4>Status</h4>
+    </ion-col>
     <ion-col>
       <ion-checkbox checked="{{item.isEvenExchange}}"></ion-checkbox> Even Exchange
     </ion-col>
@@ -76,7 +100,12 @@
       <ion-checkbox checked="{{item.isBillable}}"></ion-checkbox> Billable
     </ion-col>
   </ion-row>    
+
+
   <ion-row>
+    <ion-col size="12" size-md>
+      <h4>Status</h4>
+    </ion-col>
     <ion-col>
       {{item.itemStatus}}
     </ion-col>
@@ -90,13 +119,19 @@
       {{item.ratedValue}}
     </ion-col>
   </ion-row>
+
+
   <ion-row>
-    {{item.notes}}
+    <h4>Notes:</h4>
+    <p>{{item.notes}}</p>
   </ion-row>
+
+
   <ion-row>
     <ion-col>
-      Updated by {{item.updatedBy}}, on {{item.updateDate}}
+      Last updated by {{item.updatedBy}} on {{item.updateDate}}
     </ion-col>
   </ion-row>
+
 </ion-grid>
 
