@@ -2,29 +2,29 @@
   <form (ngSubmit)="OrderForm()">
 
     <ion-item>
-      <ion-input [(ngModel)]="order.customerId" name="customerId" placeholder="customerId" type="text">
+      <ion-input [(ngModel)]="order.customerId" name="customerId" placeholder="customerId" type="text"></ion-input>
       </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.salesPerson" name="salesPerson" placeholder="salesPerson" type="text">
+      <ion-input [(ngModel)]="order.salesPerson" name="salesPerson" placeholder="salesPerson" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.status" name="status" placeholder="status" type="text">
+      <ion-input [(ngModel)]="order.status" name="status" placeholder="status" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.soNumber" name="soNumber" placeholder="soNumber" type="number">
+      <ion-input [(ngModel)]="order.soNumber" name="soNumber" placeholder="soNumber" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.itemCount" name="itemCount" placeholder="itemCount" type="number">
+      <ion-input [(ngModel)]="order.itemCount" name="itemCount" placeholder="itemCount" type="number"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Items</ion-label>
       <ion-select [(ngModel)]="order.items" multiple="true" value="Select All" okText="Okay" cancelText="Dismiss">
-        <ion-select-option *ngFor="let item of items" value="item.id">{{item.name}}</ion-select-option>
+        <ion-option *ngFor="let item of items" value="item.id">{{item.name}}</ion-option>
       </ion-select>
     </ion-item>
 
@@ -53,37 +53,37 @@
     </ion-item>
 
     <ion-item>
-      <input [(ngModel)]="order.orderAmount" type="number" name="orderAmount" ui-money-mask>
+      <ion-input [(ngModel)]="order.orderAmount" type="number" name="orderAmount" ui-money-mask></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.receiptImageLocation" name="receiptImageLocation" placeholder="receiptImageLocation" type="text">
+      <ion-input [(ngModel)]="order.receiptImageLocation" name="receiptImageLocation" placeholder="receiptImageLocation" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.rating" name="rating" placeholder="rating" type="text">
+      <ion-input [(ngModel)]="order.rating" name="rating" placeholder="rating" type="text"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Client</ion-label>
       <ion-select [(ngModel)]="order.clientId" value="Select Client" okText="Okay" cancelText="Dismiss">
-        <ion-select-option *ngFor="let client of client" value="client.id">{{client.name}}</ion-select-option>
+        <ion-option *ngFor="let client of client" value="client.id">{{client.name}}</ion-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
       <ion-label>Location</ion-label>
       <ion-select [(ngModel)]="order.clientLocationId" value="Select Location" okText="Okay" cancelText="Dismiss">
-        <ion-select-option *ngFor="let loc of locations" value="location.id">{{location.name}}</ion-select-option>
+        <ion-option *ngFor="let loc of locations" value="location.id">{{location.name}}</ion-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.isPickedUp" name="isPickedUp" placeholder="isPickedUp" type="checkbox">
+      <ion-input [(ngModel)]="order.isPickedUp" name="isPickedUp" placeholder="isPickedUp" type="checkbox"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="order.isDelivered" name="isDelivered" placeholder="isDelivered" type="checkbox">
+      <ion-input [(ngModel)]="order.isDelivered" name="isDelivered" placeholder="isDelivered" type="checkbox"></ion-input>
     </ion-item>
 
   </form>

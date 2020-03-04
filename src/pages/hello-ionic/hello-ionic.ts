@@ -1,7 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { Location } from "../../components/location/location.model";
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, IonicModule } from 'ionic-angular';
+import { ComponentsModule } from '../../components/components.module';
 
+@NgModule({
+  imports: [
+     ComponentsModule,
+  ],
+})
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html'

@@ -12,6 +12,7 @@ import { LocationDetailsComponent } from './location/location-details/location-d
 import { ItemDetailsComponent } from './item/item-details/item-details';
 import { OrderDetailsComponent } from './order/order-details/order-details';
 import { AuthComponent } from './auth/auth';
+import { IonicModule } from 'ionic-angular';
 
 
 @NgModule({
@@ -24,13 +25,13 @@ import { AuthComponent } from './auth/auth';
         ClientEditComponent,
         ItemEditComponent,
         OrderEditComponent,
-    LocationDetailsComponent,
-    ItemDetailsComponent,
-    OrderDetailsComponent,
-    AuthComponent
+        LocationDetailsComponent,
+        ItemDetailsComponent,
+        OrderDetailsComponent,
+        AuthComponent
     ],
 	imports: [
-
+        IonicModule
     ],
 	exports: [
         OrderComponent,
@@ -41,10 +42,10 @@ import { AuthComponent } from './auth/auth';
         ClientEditComponent,
         ItemEditComponent,
         OrderEditComponent,
-    LocationDetailsComponent,
-    ItemDetailsComponent,
-    OrderDetailsComponent,
-    AuthComponent
+        LocationDetailsComponent,
+        ItemDetailsComponent,
+        OrderDetailsComponent,
+        AuthComponent
     ]
 })
 export class ComponentsModule {}

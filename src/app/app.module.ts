@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { MongooseModule } from '@nestjs/mongoose';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,13 @@ import { HttpClientModule } from '@angular/common/http';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    SettingsPage
+    SettingsPage  
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    ComponentsModule,
     IonicModule.forRoot(MyApp),
     // MongooseModule.forRoot('mongodb://localhost/client')
   ],
@@ -35,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     HelloIonicPage,
     ItemDetailsPage,
     ListPage,
-    SettingsPage
+    SettingsPage,
   ],
   providers: [
     StatusBar,
