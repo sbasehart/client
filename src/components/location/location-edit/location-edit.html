@@ -1,0 +1,125 @@
+<div class="container" >
+  <form (ngSubmit)="LocationForm()">
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.name" name="name" placeholder="name" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.storeNumber" name="storeNumber" placeholder="storeNumber" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.adress1" name="adress1" placeholder="adress1" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.address2" name="address2" placeholder="address2" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.city" name="city" placeholder="city" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-select [(ngModel)]="location.state">
+        <ion-select-option value="AL">Alabama</ion-select-option>
+        <ion-select-option value="AK">Alaska</ion-select-option>
+        <ion-select-option value="AZ">Arizona</ion-select-option>
+        <ion-select-option value="AR">Arkansas</ion-select-option>
+        <ion-select-option value="CA">California</ion-select-option>
+        <ion-select-option value="CO">Colorado</ion-select-option>
+        <ion-select-option value="CT">Connecticut</ion-select-option>
+        <ion-select-option value="DE">Delaware</ion-select-option>
+        <ion-select-option value="DC">District Of Columbia</ion-select-option>
+        <ion-select-option value="FL">Florida</ion-select-option>
+        <ion-select-option value="GA">Georgia</ion-select-option>
+        <ion-select-option value="HI">Hawaii</ion-select-option>
+        <ion-select-option value="ID">Idaho</ion-select-option>
+        <ion-select-option value="IL">Illinois</ion-select-option>
+        <ion-select-option value="IN">Indiana</ion-select-option>
+        <ion-select-option value="IA">Iowa</ion-select-option>
+        <ion-select-option value="KS">Kansas</ion-select-option>
+        <ion-select-option value="KY">Kentucky</ion-select-option>
+        <ion-select-option value="LA">Louisiana</ion-select-option>
+        <ion-select-option value="ME">Maine</ion-select-option>
+        <ion-select-option value="MD">Maryland</ion-select-option>
+        <ion-select-option value="MA">Massachusetts</ion-select-option>
+        <ion-select-option value="MI">Michigan</ion-select-option>
+        <ion-select-option value="MN">Minnesota</ion-select-option>
+        <ion-select-option value="MS">Mississippi</ion-select-option>
+        <ion-select-option value="MO">Missouri</ion-select-option>
+        <ion-select-option value="MT">Montana</ion-select-option>
+        <ion-select-option value="NE">Nebraska</ion-select-option>
+        <ion-select-option value="NV">Nevada</ion-select-option>
+        <ion-select-option value="NH">New Hampshire</ion-select-option>
+        <ion-select-option value="NJ">New Jersey</ion-select-option>
+        <ion-select-option value="NM">New Mexico</ion-select-option>
+        <ion-select-option value="NY">New York</ion-select-option>
+        <ion-select-option value="NC">North Carolina</ion-select-option>
+        <ion-select-option value="ND">North Dakota</ion-select-option>
+        <ion-select-option value="OH">Ohio</ion-select-option>
+        <ion-select-option value="OK">Oklahoma</ion-select-option>
+        <ion-select-option value="OR">Oregon</ion-select-option>
+        <ion-select-option value="PA">Pennsylvania</ion-select-option>
+        <ion-select-option value="RI">Rhode Island</ion-select-option>
+        <ion-select-option value="SC">South Carolina</ion-select-option>
+        <ion-select-option value="SD">South Dakota</ion-select-option>
+        <ion-select-option value="TN">Tennessee</ion-select-option>
+        <ion-select-option value="TX">Texas</ion-select-option>
+        <ion-select-option value="UT">Utah</ion-select-option>
+        <ion-select-option value="VT">Vermont</ion-select-option>
+        <ion-select-option value="VA">Virginia</ion-select-option>
+        <ion-select-option value="WA">Washington</ion-select-option>
+        <ion-select-option value="WV">West Virginia</ion-select-option>
+        <ion-select-option value="WI">Wisconsin</ion-select-option>
+        <ion-select-option value="WY">Wyoming</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.zip" name="zip" placeholder="zip" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.phone1" name="phone1" placeholder="phone1" type="number">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.phone2" name="phone2" placeholder="phone2" type="number">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.contact" name="contact" placeholder="contact" type="text">
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.email" name="email" placeholder="email" type="email">
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Added Date</ion-label>
+      <ion-datetime [(ngModel)]="order.addedDate" value="2019-04-15" min="1990-02"
+        [dayShortNames]="customDayShortNames"
+        displayFormat="DDD. MMM DD, YY HH:mm"
+        monthShortNames="jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Removed Date</ion-label>
+      <ion-datetime [(ngModel)]="order.removedDate" value="2019-04-15" min="1990-02"
+        [dayShortNames]="customDayShortNames"
+        displayFormat="DDD. MMM DD, YY HH:mm"
+        monthShortNames="jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="location.active" name="active" placeholder="active" type="checkbox">
+    </ion-item>
+
+    <ion-item>
+      <ion-textarea [(ngModel)]="location.notes" name="notes" placeholder="notes" type="text" rows="6">
+    </ion-item>
+
+  </form>
+</div>

@@ -65,14 +65,14 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Items</ion-label>
+      <ion-label>Client</ion-label>
       <ion-select [(ngModel)]="order.clientId" value="Select Client" okText="Okay" cancelText="Dismiss">
         <ion-select-option *ngFor="let client of client" value="client.id">{{client.name}}</ion-select-option>
       </ion-select>
     </ion-item>
 
     <ion-item>
-      <ion-label>Items</ion-label>
+      <ion-label>Location</ion-label>
       <ion-select [(ngModel)]="order.clientLocationId" value="Select Location" okText="Okay" cancelText="Dismiss">
         <ion-select-option *ngFor="let loc of locations" value="location.id">{{location.name}}</ion-select-option>
       </ion-select>
